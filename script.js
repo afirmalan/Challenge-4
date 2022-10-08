@@ -22,7 +22,7 @@ function renderQuestions(){
     // on true function, prompt question
     // loop function to loop through prompts if count > 0
     for (let i = 0; i > prompts.length; i++) {
-
+        textContent
 
     }
 
@@ -37,7 +37,7 @@ function renderQuestions(){
 function startTimer() {
     timer = setInterval(function() {
         timerCount --;
-        timerElement.textcontent = timerCount;
+        timerElement.textContent = timerCount;
     })
 }
 
