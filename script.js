@@ -1,4 +1,5 @@
 // variables (questions array)
+
 var timerElement = document.querySelector(".timer");
 var Prompts = document.querySelector(".prompts");
 var startButton = document.querySelector(".startButton");
@@ -8,8 +9,8 @@ var score = "";
 prompt = [""]
 // function on counter start with base count (6000)
 function onStart() {
-    timerCount = 30,
-    // prompt question from api
+    timerCount = 75,
+    // prompt question and 4 answers, and start page is hidden 
     renderQuestions(),
     startTimer()
 
@@ -27,7 +28,7 @@ function renderQuestions(){
     }
 
 
-    // on false answer, take time away from overall time
+    // on false answer, take 15 sec away from overall time
     // loop function to loop through prompts if count > 0
 
 
@@ -41,6 +42,10 @@ function startTimer() {
     })
 }
 
+
+// presented with the score and input for initials. Timer should stop and the time left is the score
 function init() {
     getScore()
 }
+
+addEventListener.butt

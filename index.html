@@ -1,12 +1,51 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./script.js">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <button class="startButton">Start</button>
-    
+    <div>
+        <span id="highScore"> High score </span>
+        <span id="timer"> Time Remaining: </span>
+
+    </div>
+
+    <div>
+        <section id="intro">
+            <h1>Quiz</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laborum voluptates molestias asperiores
+                repellat, quaerat tempore ullam totam quis! Commodi molestiae recusandae assumenda ipsa consequuntur
+                quam numquam perferendis dignissimos rerum.</p>
+            <button class="startButton">Start</button>
+        </section>
+
+        <section id="questions" class="hide">
+            <h3>Question 1</h3>
+            <ul>
+                <li><button id="answer1">Answer</button></li>
+                <li><button id="answer2">Answer</button></li>
+                <li><button id="answer3">Answer</button></li>
+                <li><button id="answer4">Answer</button></li>
+            </ul>
+        </section>
+        <section id="input-init" class="hide">
+            <input type="text" id="enter-init">
+            <button id="save">save</button>
+        </section>
+        <section id="dashboard" class="hide">
+            <ul>
+                <li>AF - 15</li>
+                <li>PL - 30</li>
+            </ul>
+        </section>
+    </div>
+
 </body>
+
 </html>
