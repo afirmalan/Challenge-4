@@ -1,25 +1,32 @@
 // variables (questions array)
+var highScoreEl = document.querySelector(".highScore");
+var timeEl = document.querySelector(".time");
+var introEl = document.querySelector("intro")
+var questionsEl = document.querySelector(".questions");
+var startButtonEl = document.querySelector(".startButton");
+var init = document.querySelector(".input-init")
+var dashboard = document.querySelector(".dashboard")
 
-var timerElement = document.querySelector(".timer");
-var Prompts = document.querySelector(".prompts");
-var startButton = document.querySelector(".startButton");
 
 var score = "";
 
 prompt = [""]
 // function on counter start with base count (6000)
 function onStart() {
-    timerCount = 75,
+    timerCount = 75;
+    questionsEl.classList.remove(".hide");
+    introEl.classList.add(".hide")
+
     // prompt question and 4 answers, and start page is hidden 
-    renderQuestions(),
-    startTimer()
+    renderQuestions();
+    startTimer();
 
 }
 
 
 
 
-function renderQuestions(){
+function renderQuestions() {
     // on true function, prompt question
     // loop function to loop through prompts if count > 0
     for (let i = 0; i > prompts.length; i++) {
@@ -36,9 +43,9 @@ function renderQuestions(){
 }
 
 function startTimer() {
-    timer = setInterval(function() {
-        timerCount --;
-        timerElement.textContent = timerCount;
+    timer = setInterval(function () {
+        timerCount--;
+        timeEl.textContent = timerCount;
     })
 }
 
@@ -48,4 +55,4 @@ function init() {
     getScore()
 }
 
-addEventListener.butt
+addEventListener.addEventListener("click", onStart)
