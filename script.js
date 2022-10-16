@@ -2,7 +2,7 @@
 var highScoreEl = document.querySelector(".highScore");
 var timeEl = document.querySelector(".time");
 var introEl = document.querySelector("intro")
-var questionsEl = document.querySelector(".questions");
+var questionsEl = document.querySelector("#questions");
 var startButtonEl = document.querySelector(".startButton");
 var init = document.querySelector(".input-init");
 var dashboard = document.querySelector(".dashboard");
@@ -57,7 +57,6 @@ function renderQuestions() {
     // loop function to loop through prompts if count > 0
 
 
-
 };
 
 function startTimer() {
@@ -72,6 +71,6 @@ function startTimer() {
 // presented with the score and input for initials. Timer should stop and the time left is the score
 function init() {
     getScore()
-}
+};
 
-addEventListener.addEventListener("click", onStart)
+startButtonEl.addEventListener("click", onStart)
